@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Password reset page
+    link(rel="stylesheet", href="/static/index.css")
+body
+  div.bg-container
+    div.card
+        h1(class="title-text" ) Welcome to password Reset page!
+        form(method="POST")
+          div.group-form
+            label(for="newPassword", class="label-text") Enter new Password
+            input#newPassword(type='password' name='newPassword' placeholder="Enter new password" class="input-box")
+          div.group-form
+            label(for="cPassword", class="label-text") Confirm new Password
+            input#cPassword(type='password' name='newPassword' placeholder="Confirm new password" class="input-box")
+            button(type='submit' class='submit-btn') Submit
+
+  footer
+  p © #{new Date().getFullYear()} JPR Distance Education
+  script. 
+      let a = document.getElementById('newPassword')
+      console.log(a)
+</html>
